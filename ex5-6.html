@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head><meta charset="utf-8">
+    <title>z-index 프로퍼티</title>
+    <style>
+        div{position: absolute;}
+        img {position: absolute;}
+        #cardA{z-index: -3; left: 10px; top: 20px;}
+        #card2{z-index: 2;left: 40px; top: 30px;}
+        #card3{z-index: 3; left: 80px; top: 40px;}
+        #card7{z-index: 7; left: 120px; top: 50px;}
+    </style>
+    </head>
+    <body>
+        <h3>z-index 프로퍼티</h3>
+        <hr>
+        <div>
+            <img id="cardA" src="media/cardA.png"
+            width="100" height="140" alt="하트A">
+            <img id="card2" src="media/card2.png"
+            width="100" height="140" alt="하트2">
+            <img id="card3" src="media/card3.png"
+            width="100" height="140" alt="하트3">
+            <img id="card7" src="media/card7.png"
+            width="100" height="140" alt="하트7">
+        </div>
+    </body>
+</html>
