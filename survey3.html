@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>설문지</title>
         <meta charset="utf-8">
-        <title>자기소개</title>
         <style>
             h1 {
                 color: brown; 
@@ -10,8 +10,6 @@
             }
             body {
                 background-color: aliceblue;
-            }
-            p, li, footer {
                 font-family: '휴먼편지체', '궁서체', Arial; 
                 font-size: 1em; 
                 text-indent: 1em;
@@ -19,140 +17,77 @@
             header {
                 border-bottom: 1px solid black;
             }
-            nav > ul {
-                border: 1px dashed black;
-            }
-            a {
-                text-decoration: none; 
-                color: blue;
-            }
-            h2 {
-                color: blue; 
-                text-shadow: 3px 3px 4px skyblue;
-            }
-            td {
-                text-align: center;
-            }
-            .hobbytable {
-                border-collapse: collapse;
-            }
-            .hobbytable th, .hobbytable td{
-                border: 1px solid gray;
-            }
-            .timetable th{
-                border: 2px solid rgb(100, 149, 237); 
-                width: 9em;
-                height: 2em;
-                background-color: rgb(151, 185, 248);
-            }
-            .timetable td {
-                border: 1px solid rgb(135, 187, 235);
-                background-color: rgb(193, 219, 248);
-            }
-            .timetable td.T {
-                border: 2px solid rgb(252, 177, 227);
-                background-color: rgb(248, 206, 231);
-            }
-            .timetable td.cell {
-                border: 2px dashed tan;
-                background-color: lightgoldenrodyellow;
+            section>form>article {
+                background-color: pink;
+                padding: 8px;
             }
             footer {
                 background-color: orange;
                 border-radius: 10px 10px;
             }
-            a:hover {
-                color: hotpink;
-            }
+
         </style>
     </head>
     <body>
-      <header>
-            <h1>About me</h1>
-          <p>안녕하세요? 제 이름은 박지아입니다. 올해 대학교를 입학한 새내기입니다.<br>
-             다양한 관심 분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요~
-          </p>
-      </header>
-       <nav> 
-          <h2>목차</h2>
-            <ul>
-                <li><a href="#interests">관심분야</a></li>
-                <li><a href="#hobby">취미활동</a></li>
-                <li><a href="#time">강의시간표</a></li>
-            </ul>
-       </nav>
-
-        <section>
-           <article>
-                <h2 id="interests">관심 분야</h2>
-                <hr>
-                <ul>
-                    <li>음악
-                        <ul>
-                            <li>클래식</li>
-                            <li>팝송</li>
-                            <li>아일랜드 포크송(릴/지그)</li>
-                            <li>EDM</li>
-                        </ul>
-                    </li>
-                    <li>연골어류
-                        <ul>
-                            <li>가오리상목(Batoidea)</li>
-                            <li>흉상어목(Carcharhiniformes)</li>
-                            <li>홍어목(Rajiformes)</li>
-                            <li>수염상어목(Orectolobiformes)</li>
-                        </ul>
-                    </li>
-                    <li>우주
-                        <ul>
-                            <li>블랙홀(Black Hole)</li>
-                            <li>초신성(Supernova)</li>
-                            <li>중성자별(Neutron Star)</li>
-                            <li>우주론 가설(Cosmological hypotheses)</li>
-                        </ul>
-                    </li>
-                </ul>
-           </article>
-
-           <article>
-                <h2 id="hobby">취미 활동</h2>
-                <hr>
-                <table class="hobbytable">
-                    <tbody>
-                        <tr><td><img src="media/game.jpg" 
-                            height="200"></td><td><img src="media/music.jpg" height="200"></td><td><img src="media/drawing.jpg" height="200"></td></tr>
-                    </tbody>
-                    <tfoot>
-                        <tr><td>gaming</td><td>Listening to music</td><td>drawing</td></tr>
-                    </tfoot>
-                </table>
-           </article>
-           <br>
-           <article>
-               <h2 id="time">강의 시간표(2025년 1학기)</h2>
-               <hr>
-               <table class="timetable">
-                   <thead>
-                        <tr><th>구분</th><th>월</th><th>화</th>
-                        <th>수</th><th>목</th><th>금</th></tr>
-                   </thead>
-                   <tbody>
-                        <tr><td class="T">09</td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td class="T">10</td><td></td><td class="cell" rowspan="3">프로그래밍언어실습1<br>(102/공학603)</td><td></td><td></td><td></td></tr>
-                        <tr><td class="T">11</td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td class="T">12</td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td class="T">13</td><td></td><td></td><td></td><td class="cell" rowspan="3">컴퓨터과학개론<br>(102/공학608)</td><td></td></tr>
-                        <tr><td class="T">14</td><td class="cell" rowspan="2">SW개발문제해결능력<br>(102/공학608)</td><td></td><td class="cell" rowspan="3">인터넷콘텐츠<br>(102/공학603)</td><td></td></tr>
-                        <tr><td class="T">15</td><td></td><td></td></tr>
-                        <tr><td class="T">16</td><td></td><td></td><td></td><td></td></tr>
-                   </tbody>
-               </table>
-            </article>
-        </section> 
+        <header>
+            <h1>설문지</h1>
+            <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</p>
+            <hr>
+        </header>
         <br>
-        <footer>
-            <a href="survey3.html" target="_blank">설문조사</a><br>
-            <p>Copyright 2026 by MYONGJI COLLEGE</p>
-        </footer>
+        <section>
+            <form>
+                <article>학년
+                    <label>
+                        <input type="radio" name="grade" value="1" checked>1학년
+                    </label>
+                    <label>
+                        <input type="radio" name="grade" value="2">2학년
+                    </label>
+                    <label>
+                        <input type="radio" name="grade" value="3">3학년
+                    </label><br>
+                </article>
+                <article>성별
+                    <label>
+                        <input type="radio" name="gender" value="1">남
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="2">여
+                    </label><br>
+                </article>
+                <article>관심 분야
+                    <label>
+                        <select name="interests">
+                        <option value="1">정보 보안</option>
+                        <option value="2">시스템 소프트웨어</option>
+                        <option value="3">응용 소프트웨어</option>
+                        <option value="4">임베디드 소프트웨어</option>
+                        </select>
+                    </label><br>
+                </article>
+                <article>진로
+                    <label>
+                        <input type="checkbox" name="ex" value="1" checked>개발
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ex" value="2">기획
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ex" value="3">영업
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ex" value="4">창업
+                    </label><br>
+                </article>
+                <article>남기고 싶은 말
+                    <label>
+                        <textarea name="comment" rows="10" cols="40" placeholder="글을 남겨주세요"></textarea>
+                        </label>
+                </article>
+            </form>
+        </section>
+        <br>
+        <footer>Copyright 2026 by MYONGJI COLLEGE</footer>
     </body>
 </html>
