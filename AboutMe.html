@@ -1,11 +1,74 @@
-<!DOCTYPE htmal>
+<!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
-    <title>자기소개</title>
+    <head>
+        <meta charset="utf-8">
+        <title>자기소개</title>
+        <style>
+            h1 {
+                color: brown; 
+                text-align: center;
+            }
+            body {
+                background-color: aliceblue;
+            }
+            p, li, footer {
+                font-family: "휴먼편지체", Arial; 
+                font-size: 1em; 
+                text-indent: 1em;
+            }
+            header {
+                border-bottom: 1px solid black;
+            }
+            nav > ul {
+                border: 1px dashed black;
+            }
+            a {
+                text-decoration: none; 
+                color: blue;
+            }
+            h2 {
+                color: blue; 
+                text-shadow: 3px 3px 4px skyblue;
+            }
+            td {
+                text-align: center;
+            }
+            .hobbytable {
+                border-collapse: collapse;
+            }
+            .hobbytable th, .hobbytable td{
+                border: 1px solid gray;
+            }
+            .timetable th{
+                border: 2px solid rgb(100, 149, 237); 
+                width: 9em;
+                height: 2em;
+                background-color: rgb(151, 185, 248);
+            }
+            .timetable td {
+                border: 1px solid rgb(135, 187, 235);
+                background-color: rgb(193, 219, 248);
+            }
+            .timetable td.T {
+                border: 2px solid rgb(252, 177, 227);
+                background-color: rgb(248, 206, 231);
+            }
+            .timetable td.cell {
+                border: 2px dashed tan;
+                background-color: lightgoldenrodyellow;
+            }
+            footer {
+                background-color: orange;
+                border-radius: 10px 10px;
+            }
+            a:hover {
+                color: hotpink;
+            }
+        </style>
+    </head>
     <body>
       <header>
-            <h2>About me</h2>
-          <hr>
+            <h1>About me</h1>
           <p>안녕하세요? 제 이름은 박지아입니다. 올해 대학교를 입학한 새내기입니다.<br>
              다양한 관심 분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요~
           </p>
@@ -15,13 +78,13 @@
             <ul>
                 <li><a href="#interests">관심분야</a></li>
                 <li><a href="#hobby">취미활동</a></li>
-                <li><a href="#timetable">강의시간표</a></li>
+                <li><a href="#time">강의시간표</a></li>
             </ul>
        </nav>
 
         <section>
            <article>
-                <h2 id="interests">관심 분야</h2></a>
+                <h2 id="interests">관심 분야</h2>
                 <hr>
                 <ul>
                     <li>음악
@@ -52,44 +115,44 @@
            </article>
 
            <article>
-                <h2 id="hobby">취미 활동</h2></a>
+                <h2 id="hobby">취미 활동</h2>
                 <hr>
-                <table border="1">
+                <table class="hobbytable">
                     <tbody>
                         <tr><td><img src="media/game.jpg" 
                             height="200"></td><td><img src="media/music.jpg" height="200"></td><td><img src="media/drawing.jpg" height="200"></td></tr>
                     </tbody>
                     <tfoot>
-                        <tr><th>gaming</th><th>Listening to music</th><th>drawing</th></tr>
+                        <tr><td>gaming</td><td>Listening to music</td><td>drawing</td></tr>
                     </tfoot>
                 </table>
            </article>
-
+           <br>
            <article>
-               <h2 id="timetable">강의 시간표(2025년 1학기)</h2>
+               <h2 id="time">강의 시간표(2025년 1학기)</h2>
                <hr>
-               <table border="1">
+               <table class="timetable">
                    <thead>
                         <tr><th>구분</th><th>월</th><th>화</th>
                         <th>수</th><th>목</th><th>금</th></tr>
                    </thead>
-                   <tbody style="text-align: center;">
-                        <tr><td>09</td><td></td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td>10</td><td></td><td rowspan="3">프로그래밍언어실습1<br>(102/공학603)</td><td></td><td></td><td></td></tr>
-                        <tr><td>11</td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td>12</td><td></td><td></td><td></td><td></td></tr>
-                        <tr><td>13</td><td></td><td></td><td></td><td rowspan="3">컴퓨터과학개론<br>(102/공학608)</td><td></td></tr>
-                        <tr><td>14</td><td rowspan="2">SW개발문제해결능력<br>(102/공학608)</td><td></td><td rowspan="3">인터넷콘텐츠<br>(102/공학603)</td><td></td></tr>
-                        <tr><td>15</td><td></td><td></td></tr>
-                        <tr><td>16</td><td></td><td></td><td></td><td></td></tr>
+                   <tbody>
+                        <tr><td class="T">09</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td class="T">10</td><td></td><td class="cell" rowspan="3">프로그래밍언어실습1<br>(102/공학603)</td><td></td><td></td><td></td></tr>
+                        <tr><td class="T">11</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td class="T">12</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td class="T">13</td><td></td><td></td><td></td><td class="cell" rowspan="3">컴퓨터과학개론<br>(102/공학608)</td><td></td></tr>
+                        <tr><td class="T">14</td><td class="cell" rowspan="2">SW개발문제해결능력<br>(102/공학608)</td><td></td><td class="cell" rowspan="3">인터넷콘텐츠<br>(102/공학603)</td><td></td></tr>
+                        <tr><td class="T">15</td><td></td><td></td></tr>
+                        <tr><td class="T">16</td><td></td><td></td><td></td><td></td></tr>
                    </tbody>
                </table>
             </article>
         </section> 
-
+        <br>
         <footer>
-            <a href="survey3.html" target="_blank">설문조사</a><br><br>
-            Copyright 2026 by MYONGJI COLLEGE
+            <a href="survey3.html" target="_blank">설문조사</a><br>
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
         </footer>
     </body>
 </html>
